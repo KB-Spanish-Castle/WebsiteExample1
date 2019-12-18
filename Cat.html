@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Kyle Bigart, 10-6-19
+        Only Cat photos can be selected to replace the large photo.
+        Cat years are being calcuated by multiply 1 human year by 4.
+        For Example: 4 years for cat years, so 5 human years would be 20 cat years by 4*5.
+    Sources:
+    https://www.w3schools.com/tags/tag_output.asp
+    https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_output
+     -->
+    <!--Linking the css stylesheeet named: "PetHouseStyle.css"-->
+    <link rel="stylesheet" type="text/css" href="PetHouseStyle.css">
+    <!--The Top navigation bar have the "active" for the current page selected.-->
+    <div class="topnav">
+        <a href="/PetHouse.html">Home</a>
+        <a class="active" href="#cats">Cats</a>
+        <a href="/Dog.html">Dogs</a>
+    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cat</title>
+</head>
+<!--Webpage background-->
+
+<body style="background-color:lightgoldenrodyellow;">
+    <!--Large photo, that is set to it's default selected phto and size.-->
+    <img height="540px" width="540px" style="border:3px solid grey" src="/images/8_month_old_Norwegian_Forest_Cat.jpg"
+        id="mainImage" />
+    <br />
+    In Human Years: <input type="text" id="CatTextBox" value="38">
+    <br />
+    <label for="CatYearsTotal"><font color="red"><b>Remember greater than 0 and no strings.</b></font></label>
+    <!--The button -->
+    <input type="button" id="CalculateCatYearsBtn" value="Calculate Cat Years">
+    <!--Defined all the photos available to slect.-->
+    <div id="photoReel" onclick="changeImage(event)">
+        <img class="imgStyle" src="images/8_month_old_Norwegian_Forest_Cat.jpg" />
+        <img class="imgStyle" src="images/Calico_Sisters.jpg" />
+        <img class="imgStyle" src="images/Calico_cat_-_bright.jpg" />
+        <img class="imgStyle" src="images/Norwegian_forest_cat.jpg" />
+        <img class="imgStyle" src="images/SnowyandHazy.jpg" />
+        <br />
+        <!--Calling the Javascript file named "Engine.js"-->
+        <script src="Engine.js"></script>
+        <!--This seprate internal javascript function/method,
+             will execute the calculateDogYears function in Engine.js
+            and the user's webpage browser will center on the button just clicked-->
+        <script>
+            window.onload = function () {
+                $("CalculateCatYearsBtn").onclick = calculateCatYears;
+                $("CalculateCatYearsBtn").focus();
+            };
+        </script>
+</body>
+
+</html>

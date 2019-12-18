@@ -1,0 +1,43 @@
+
+CSCI211-HO-Client Side Programming-78090
+Submit "project 1" here for grading
+Due Sunday, October 6, 2019, 11:59 PM
+Time remaining: 30 days 6 hours
+
+Create at least 3 web pages that include the following components or functionality.
+
+To submit, zip your files and submit on this assignment.
+
+Your program must meet the following:
+
+80 points for Functionality.
+
+1. At least 3 web pages, 1 javascipt file, and 1 CSS file.
+
+2. Use the DOM to manipulate content (getElementById, or  getElementsByTagName)
+
+3. Use at least three javascript events
+
+4. Place as much of your javascript as possible in external .js files.
+
+5. At least two functions (not counting $ function).
+
+6. Use an html form to collect data.
+
+7. Do some calculation with form data.
+
+8. Pages look good, not distracting. CSS used for presentation.
+
+20 points for Documentation:
+
+1) Name, date and helpful, unique narrative purpose statement.
+
+2) Meaningful object, variable, and function names.
+
+3) Some brief internal comments (At a minimum, comment variables and blocks of code, like switches, loops, procedures, and decisions).
+
+4) White space to separate functional parts of the program.
+
+5) Indented structured code.
+
+6) Code or images not created by you is commented so as to give credit to the original source.

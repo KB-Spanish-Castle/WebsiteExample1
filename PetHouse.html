@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Kyle Bigart 10-6-19
+    This web page have a header, both cats and dogs photos
+     are availabe to slect one to enlarge it by replacing the large "main" photo.-->
+  <!--Linking the css stylesheeet named: "PetHouseStyle.css"-->
+  <link rel="stylesheet" type="text/css" href="PetHouseStyle.css">
+  <!--Source:
+  https://www.w3schools.com/howto/howto_js_topnav.asp
+All of the photos are from Wikipedia, also the names of the files was left unchanged.-->
+  <!--The Top navigation bar have the "active" for the current page selected.-->
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="/Cat.html">Cats</a>
+    <a href="/Dog.html">Dogs</a>
+  </div>
+</head>
+<!--Webpage background-->
+
+<body style="background-color:lightgoldenrodyellow;">
+  <!--Large photo, that is set to it's default selected phto and size.-->
+  <img height="540px" width="540px" style="border:3px solid grey" src="/images/8_month_old_Norwegian_Forest_Cat.jpg"
+    id="mainImage" />
+  <br />
+  <!--Defined all the photos available to slect.-->
+  <div id="photoReel" onclick="changeImage(event)">
+    <img class="imgStyle" src="images/8_month_old_Norwegian_Forest_Cat.jpg" />
+    <img class="imgStyle" src="images/Calico_Sisters.jpg" />
+    <img class="imgStyle" src="images/Calico_cat_-_bright.jpg" />
+    <img class="imgStyle" src="images/Norwegian_forest_cat.jpg" />
+    <img class="imgStyle" src="images/SnowyandHazy.jpg" />
+    <br />
+    <img class="imgStyle" src="images/Golde33443.jpg" />
+    <img class="imgStyle" src="images/Border_Collie_rojo_mirlo_tricolor_(Birdy_de_los_Baganicos).jpg" />
+    <img class="imgStyle" src="images/Jamnik_Dchshund_puppies.jpg" />
+    <img class="imgStyle" src="images/AmericanCollie.jpg" />
+    <img class="imgStyle" src="images/Chiot_berger_des_shetland.jpg" />
+  </div>
+  <!--Calling the Javascript file named "Engine.js"-->
+  <script src="Engine.js"></script>
+
+</body>
+
+</html>
